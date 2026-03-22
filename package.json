@@ -1,6 +1,6 @@
 {
   "name": "zextra-plus",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Extra built in zikojs components built on the top of 3rd party libraries",
   "main": "index.js",
   "type": "module",
