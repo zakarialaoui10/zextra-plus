@@ -1,4 +1,4 @@
-import { UIElement } from "ziko/ui";
+import { UIElement } from "ziko/dom";
 import "@lottiefiles/lottie-player";
 
 export interface UILottiePlayerOptions {
