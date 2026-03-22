@@ -1,10 +1,10 @@
-import {UIElement} from "ziko"
+import {UIElement} from "ziko/ui"
 import "@lottiefiles/lottie-player"
-class ZikoLottiePlayer extends UIElement{
+class UILottiePlayer extends UIElement{
     constructor(src,width,height = width){
-        super("lottie-player","LottiePlayer");
+        super({element : "lottie-player", name : "LottiePlayer"});
         this.element.src=src;
-        if(width)this.size(width,height);
+        if(width) this.size(width,height);
         this.setAttr("aria-label","Lottie animation");
         this.setAttr("aria-describedby",`lottie-player-description-id`);
     }
@@ -33,5 +33,8 @@ class ZikoLottiePlayer extends UIElement{
         return this;
     }
 }
-const LottiePlayer=(src = "https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json",width,height)=>new ZikoLottiePlayer(src,width,height);
-export {LottiePlayer}
+export const LottiePlayer=({
+    src = "https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json",
+    width,
+    height
+} = {})=>new UILottiePlayer(src,width,height);

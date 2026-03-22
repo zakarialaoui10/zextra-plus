@@ -1,7 +1,7 @@
 {
-  "name": "ziko-lottie",
-  "version": "1.0.0",
-  "description": "Lottie player element for zikojs",
+  "name": "zextra-plus",
+  "version": "0.0.0",
+  "description": "Extra built in zikojs components built on the top of 3rd party libraries",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -19,9 +19,8 @@
     "animation"
   ],
   "exports": {
-    ".": {
-      "import": "./dist/ziko-lottie.mjs",
-      "require": "./dist/ziko-lottie.cjs"
+    "./*" : {
+      "import" : "./src/*/index.js"
     }
   },
   "files": [
@@ -31,14 +30,15 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.0",
-    "@rollup/plugin-node-resolve": "^15.3.0",
-    "@rollup/plugin-terser": "^0.4.4",
-    "cross-env": "^7.0.3",
-    "rollup": "^4.24.0"
+    "@rollup/plugin-commonjs": "^29.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^1.0.0",
+    "cross-env": "^10.1.0",
+    "rollup": "^4.60.0"
   },
   "dependencies": {
-    "@lottiefiles/lottie-player": "^2.0.4",
-    "ziko": "^0.34.2"
+    "@lottiefiles/lottie-player": "^2.0.12",
+    "zextra": "^1.1.0",
+    "ziko": "^1.0.0"
   }
 }
